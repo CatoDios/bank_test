@@ -1,0 +1,5 @@
+include ':data'
+include ':usecase'
+include ':domain'
+include ':app'
+rootProject.name = "BankTest"

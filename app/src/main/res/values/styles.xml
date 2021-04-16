@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="icon_card">
+        <item name="tint">@color/white</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <style name="text_card">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+
+    <style name="CardTitle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+
+    </style>
+
+    <style name="CardViewDark" parent="CardView">
+        <item name="cardCornerRadius">10dp</item>
+        <item name="android:backgroundTint">@color/surface_card</item>
+    </style>
+
+    <style name="CardViewDarkTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">0.87</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardViewDarkSubTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">0.6</item>
+        <item name="maxLines">5</item>
+        <item name="android:ellipsize">end</item>
+
+    </style>
+</resources>

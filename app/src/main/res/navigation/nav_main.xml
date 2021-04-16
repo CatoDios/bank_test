@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.banktest.presentation.main.MainFragment"
+        android:label="LocationFragment"
+        tools:layout="@layout/main_fragment"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment" >
+            <argument
+                android:name="userDetails"
+                app:argType="com.example.domain.User"
+                />
+        </action>
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.example.banktest.presentation.detail.UserDetailsFragment"
+        android:label="UserDetailsFragment"
+        tools:layout="@layout/detail_fragment"
+        >
+        <argument
+            android:name="userDetails"
+            app:argType="com.example.domain.User" />
+    </fragment>
+
+    <!--
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.oximap.pro.oximap.presentation.map.MapFragment"
+            android:label="Popular Photos"
+            tools:layout="@layout/map_fragment">
+
+        </fragment>-->
+
+
+</navigation>
